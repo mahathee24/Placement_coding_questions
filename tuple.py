@@ -6,15 +6,15 @@ students = [
     {"name": "virat", "dept": "ece", "marks": [16, 90, 43]}
 ]
 
-# Calculate average and store it
+# Calculate percentage and store it
 for student in students:
     total = sum(student["marks"])
-    avg = total // len(student["marks"])  # integer average
-    student["average"] = avg
+    percentage = (total / 300) * 100
+    student["percentage"] = round(percentage, 2)  # round to 2 decimal places
 
-# Sort by average marks in descending order
-students_sorted = sorted(students, key=lambda x: x["average"], reverse=True)
+# Sort students by percentage in descending order
+students_sorted = sorted(students, key=lambda x: x["percentage"], reverse=True)
 
 # Display
 for student in students_sorted:
-    print(f"Name: {student['name']}, Department: {student['dept']}, Average Marks: {student['average']}")
+    print(f"Name: {student['name']}, Department: {student['dept']}, Percentage: {student['percentage']}%")

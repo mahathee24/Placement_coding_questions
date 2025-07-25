@@ -1,0 +1,4 @@
+Name,Email,Username,Password
+Alice Smith,alice@example.com,alice123,securePass
+Bob Martin,bob@example.com,bobby,bobPass123
+Mahathee,mahathee1234@gmail.com,mk,mkak
